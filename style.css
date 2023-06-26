@@ -27,6 +27,7 @@ body {
 
 .quote-text {
   font-size: 2.58rem;
+  user-select: none;
 }
 
 .long-quote {
@@ -42,6 +43,7 @@ body {
   font-size: 2rem;
   font-weight: 400;
   font-style: italic;
+  user-select: none;
 }
 .button-container {
   margin-top: 15px;
@@ -61,17 +63,18 @@ button {
   outline: none;
   padding: 0.5rem 1.8rem;
   box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+  user-select: none;
 }
 
 button:hover {
   filter: brightness(110%);
 }
 
-.twitter-button:hover{
-  color:#38a1f3 ;
+.twitter-button:hover {
+  color: #38a1f3;
 }
 
-.fa-twitter{
+.fa-twitter {
   font-size: 1.5rem;
 }
 
@@ -90,8 +93,12 @@ button:active {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*Media Query: Tablet or Smaller  */
@@ -108,4 +115,3 @@ button:active {
     font-size: 1.5rem;
   }
 }
-
